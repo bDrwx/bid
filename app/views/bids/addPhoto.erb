@@ -1,0 +1,8 @@
+<h1>Add Photo Action </h1>
+<% form_for :order, :url => {:action => :save_photo} do |form| %>
+  <p>
+    <label for="desc">Description:</label>
+    <%= form.text_field :desc, :size => 40 %>
+  </p>
+  <%= submit_tag "Place Photo", :class => "submit" %>
+<% end %>

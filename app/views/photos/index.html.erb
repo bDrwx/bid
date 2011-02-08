@@ -1,0 +1,18 @@
+<h1>Photo for <%= @bid.name %></h1>
+
+<table>
+  <tr>
+    <th>Photo</th>
+  </tr>
+<% for ph in @photos %>
+  <tr>
+    <td><%= image_tag ph.photo.url %></td>
+    <td><%=h ph.desc %>
+    <td><<%= link_to 'Edit', edit_bid_photo_path(@bid, ph) %></td>
+    <td><%= link_to 'Destroy', bid_photo_path(@bid, ph), :confirm =>'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'Add photo', new_bid_photo_path(@bid) %>
+<%= link_to 'Back to BID', @bid %>

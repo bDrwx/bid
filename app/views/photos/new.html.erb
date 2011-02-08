@@ -1,0 +1,15 @@
+<h1>New photo</h1>
+<% form_for([@bid, @photo], :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :desc %>
+    <%= f.text_field :desc %>
+  </p>
+  <p>
+    <%= f.label :photo, "Photo" %>
+    <%= f.file_field :photo %>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+

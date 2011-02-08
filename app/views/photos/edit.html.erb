@@ -1,0 +1,18 @@
+<h1>Editing photo</h1>
+<% form_for([@bid, @photo], :html =>{:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_field :desc %>
+  </p>
+  <p>
+    <%= image_tag @photo.photo.url %>
+  </p>
+  <p>
+    <%= f.label :photo, "Sosisci" %>
+    <%= f.file_field :photo %>
+  </p>
+  <p><%= f.submit "Update" %></p>
+<% end %>
+

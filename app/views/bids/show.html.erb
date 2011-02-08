@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @bid.name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @bid.desc %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @bid.price %>
+</p>
+<p>
+<h2>Photos</h2>
+<% @bid.photos.each do |c| %>
+  <p>
+    <b>Photo:</b>
+    <p><%= image_tag c.photo.url %></p>
+    <%=h c.desc %>
+  </p>
+<% end %>
+</p>  
+  
+<%= link_to 'Edit', edit_bid_path(@bid) %> |
+<%= link_to 'Back to BID list', bids_path %>
+<%= link_to 'Manage Photos', bid_photos_path(@bid) %>
