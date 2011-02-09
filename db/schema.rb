@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110207000517) do
+ActiveRecord::Schema.define(:version => 20110209162454) do
 
 # Could not dump table "bids" because of following ActiveRecord::StatementInvalid
 #   SQLite3::SQLException: no such table: sqlite3_foreign_keys:         SELECT *

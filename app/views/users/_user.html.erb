@@ -18,6 +18,10 @@
       <%= form.password_field :password_confirmation %>
     </li>
     <li>
+      <%= form.label :roles %>
+      <%= form.collection_select :role, User::ROLES, :to_s, :humanize %>
+    </li>
+    <li>
       <%= form.submit "Submit" %>
     </li>
   </ol>
