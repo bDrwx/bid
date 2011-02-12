@@ -1,4 +1,5 @@
 class BidsController < ApplicationController
+  load_and_authorize_resource 
   # GET /bids
   # GET /bids.xml
   def index
@@ -41,6 +42,7 @@ class BidsController < ApplicationController
   # POST /bids.xml
   def create
     @bid = Bid.new(params[:bid])
+    @bid.user = user
 
     respond_to do |format|
       if @bid.save

@@ -13,8 +13,12 @@
     <td><%=h bid.desc %></td>
     <td><%=h bid.price %></td>
     <td><%= link_to 'Show', bid %></td>
-    <td><%= link_to 'Edit', edit_bid_path(bid) %></td>
-    <td><%= link_to 'Destroy', bid, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if can? :update, bid -%>
+      <td><%= link_to 'Edit', edit_bid_path(bid) %></td>
+    <% end -%>
+    <% if can? :destroy, bid -%>
+      <td><%= link_to 'Destroy', bid, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end -%>
   </tr>
 <% end %>
 </table>

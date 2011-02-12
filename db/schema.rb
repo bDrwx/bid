@@ -9,21 +9,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110209162454) do
+ActiveRecord::Schema.define(:version => 20110209213652) do
 
-# Could not dump table "bids" because of following ActiveRecord::StatementInvalid
-#   SQLite3::SQLException: no such table: sqlite3_foreign_keys:         SELECT *
-          FROM sqlite3_foreign_keys
-         WHERE "from_table_name" = 'bids'
+  create_table "bids", :force => true do |t|
+    t.string   "name"
+    t.text     "desc"
+    t.integer  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id",    :default => 1, :null => false
+  end
 
-# Could not dump table "photos" because of following ActiveRecord::StatementInvalid
-#   SQLite3::SQLException: no such table: sqlite3_foreign_keys:         SELECT *
-          FROM sqlite3_foreign_keys
-         WHERE "from_table_name" = 'photos'
+  create_table "photos", :force => true do |t|
+    t.string   "desc"
+    t.integer  "bid_id",             :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
 
-# Could not dump table "users" because of following ActiveRecord::StatementInvalid
-#   SQLite3::SQLException: no such table: sqlite3_foreign_keys:         SELECT *
-          FROM sqlite3_foreign_keys
-         WHERE "from_table_name" = 'users'
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "role"
+  end
+
+  add_foreign_key "bids", ["user_id"], "users", ["id"], :name => "fk_bids_id"
 
 end
