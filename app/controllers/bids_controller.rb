@@ -41,8 +41,10 @@ class BidsController < ApplicationController
   # POST /bids
   # POST /bids.xml
   def create
-    @bid = Bid.new(params[:bid])
-    @bid.user = user
+#    @bid = Bid.new(params[:bid])
+
+    @user = current_user
+    @bid = @user.bids.build(params[:bid])
 
     respond_to do |format|
       if @bid.save
