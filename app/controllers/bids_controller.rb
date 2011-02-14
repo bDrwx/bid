@@ -1,5 +1,4 @@
 class BidsController < ApplicationController
-  load_and_authorize_resource 
   # GET /bids
   # GET /bids.xml
   def index

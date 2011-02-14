@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
+  load_and_authorize_resource :bid
+  load_and_authorize_resource :photo, :through => :bid, :parent => false
+  
   private
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
