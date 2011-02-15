@@ -7,7 +7,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   load_and_authorize_resource :bid
-  load_and_authorize_resource :photo, :through => :bid, :parent => false
+  load_and_authorize_resource :photo, :through => :bid
+#  load_and_authorize_resource :photo, :through => :bid, :parent => false, :shallow =>true
   
   private
   def current_user_session

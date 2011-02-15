@@ -9,7 +9,7 @@ class Ability
     end
     if user.role? :native
       can :create, Bid
-      can :manage, Photo, :bid => {:user_id => user.id}
+#      can :manage, Photo, :bid => {:user_id => user.id}
       can :update, Bid do |bid|
         bid.try(:user) == user
       end

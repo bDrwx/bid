@@ -11548,3 +11548,1023 @@ CanCan::AccessDenied (You are not authorized to access this page.):
 Rendered rescues/_trace (18.7ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:30:30) [GET]
+  [4;36;1mUser Indexes (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mBid Load (0.3ms)[0m   [0mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+Completed in 329ms (View: 51, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing UserSessionsController#new (for 192.168.232.1 at 2011-02-15 04:30:45) [GET]
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (18.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 192.168.232.1 at 2011-02-15 04:30:53) [GET]
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 192.168.232.1 at 2011-02-15 04:31:19) [GET]
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:31:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 4 AND ("photos".bid_id = 4)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=4 AND ("photos".bid_id = 4)):
+  cancan (1.4.1) lib/cancan/controller_resource.rb:84:in `find_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:50:in `load_resource_instance'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:30:in `load_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:24:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (17.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:33:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mUser Indexes (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+Completed in 144ms (View: 133, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:33:52) [GET]
+  [4;35;1mBid Load (0.6ms)[0m   [0mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+Completed in 39ms (View: 31, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:34:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.3ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+Completed in 47ms (View: 35, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:34:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+Completed in 88ms (View: 46, DB: 1) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:34:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 2) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 2) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+Completed in 89ms (View: 78, DB: 1) | 200 OK [http://192.168.232.131/bids/2]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:34:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBid Indexes (1.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 1) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 1) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+Completed in 80ms (View: 37, DB: 2) | 200 OK [http://192.168.232.131/bids/1]
+
+
+Processing UserSessionsController#new (for 192.168.232.1 at 2011-02-15 04:34:18) [GET]
+  [4;36;1mUser Indexes (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+Rendering user_sessions/new
+Completed in 74ms (View: 21, DB: 0) | 200 OK [http://192.168.232.131/login]
+
+
+Processing UserSessionsController#create (for 192.168.232.1 at 2011-02-15 04:34:29) [POST]
+  Parameters: {"authenticity_token"=>"e3Km2wFDZ+JhJERcshG0Nh9TBIqO4bTYJENZfxkQsXE=", "user_session"=>{"username"=>"master", "password"=>"rhsvcr"}, "commit"=>"Submit"}
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'master') LIMIT 1[0m
+Redirected to http://192.168.232.131:3000/
+Completed in 22ms (DB: 1) | 302 Found [http://192.168.232.131/user_sessions]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:34:34) [GET]
+  [4;35;1mBid Load (0.7ms)[0m   [0mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;36;1mBid Indexes (0.2ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 49ms (View: 40, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:34:37) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+Completed in 81ms (View: 38, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#edit (for 192.168.232.1 at 2011-02-15 04:34:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (1.7ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/edit
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+Completed in 95ms (View: 51, DB: 2) | 200 OK [http://192.168.232.131/bids/4/edit]
+
+
+Processing BidsController#new (for 192.168.232.1 at 2011-02-15 04:34:44) [GET]
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+Rendering template within layouts/bids
+Rendering bids/new
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+Completed in 88ms (View: 79, DB: 0) | 200 OK [http://192.168.232.131/bids/new]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:36:04) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 100ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:36:06) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 46ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:36:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 52ms (View: 11, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#edit (for 192.168.232.1 at 2011-02-15 04:36:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/edit
+Completed in 46ms (View: 5, DB: 1) | 200 OK [http://192.168.232.131/bids/4/edit]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:36:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 52ms (View: 11, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#edit (for 192.168.232.1 at 2011-02-15 04:36:17) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.3ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/edit
+Completed in 47ms (View: 6, DB: 1) | 200 OK [http://192.168.232.131/bids/4/edit]
+
+
+Processing BidsController#edit (for 192.168.232.1 at 2011-02-15 04:45:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/edit
+Completed in 82ms (View: 5, DB: 1) | 200 OK [http://192.168.232.131/bids/4/edit]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:45:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 86ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing BidsController#edit (for 192.168.232.1 at 2011-02-15 04:45:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBid Indexes (0.0ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (15.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:46:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 106ms (View: 11, DB: 3) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:46:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 89ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:46:37) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 117ms (View: 38, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:46:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 96ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:46:49) [GET]
+  Parameters: {"bid_id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering photos/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 88ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/3/photos]
+
+
+Processing PhotosController#new (for 192.168.232.1 at 2011-02-15 04:46:59) [GET]
+  Parameters: {"bid_id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#edit (for 192.168.232.1 at 2011-02-15 04:47:08) [GET]
+  Parameters: {"bid_id"=>"3", "id"=>"16"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 16 AND ("photos".bid_id = 3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:47:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 95ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:47:15) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.4ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 92ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos]
+
+
+Processing PhotosController#edit (for 192.168.232.1 at 2011-02-15 04:47:17) [GET]
+  Parameters: {"bid_id"=>"4", "id"=>"15"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 15 AND ("photos".bid_id = 4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 15 AND ("photos".bid_id = 4)) [0m
+Rendering photos/edit
+Completed in 105ms (View: 23, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos/15/edit]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:47:33) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.3ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 89ms (View: 9, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:47:40) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 98ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos]
+
+
+Processing PhotosController#new (for 192.168.232.1 at 2011-02-15 04:47:41) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/new
+Completed in 103ms (View: 17, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos/new]
+
+
+Processing PhotosController#create (for 192.168.232.1 at 2011-02-15 04:47:56) [POST]
+  Parameters: {"authenticity_token"=>"e3Km2wFDZ+JhJERcshG0Nh9TBIqO4bTYJENZfxkQsXE=", "photo"=>{"desc"=>"\xD1\x85\xD0\xB0\xD1\x85\xD0\xB0", "photo"=>#<File:/tmp/RackMultipart20110215-1530-19bvhij>}, "commit"=>"Create", "bid_id"=>"4"}
+  [4;35;1mBid Indexes (1.2ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.5ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mPhoto Create (1.4ms)[0m   [0mINSERT INTO "photos" ("desc", "bid_id", "created_at", "updated_at", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES('хаха', 4, '2011-02-15 01:47:57', '2011-02-15 01:47:57', 'squirrel.png', 'image/png', 46947, '2011-02-15 01:47:57')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /root/bid/public/system/photos/18/original/squirrel.png
+Redirected to http://192.168.232.131:3000/bids/4
+Completed in 139ms (DB: 4) | 302 Found [http://192.168.232.131/bids/4/photos]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:47:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 89ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:48:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 75ms (View: 13, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:48:08) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 55ms (View: 11, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:48:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBid Indexes (1.6ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.3ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 101ms (View: 10, DB: 3) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:48:16) [GET]
+  Parameters: {"bid_id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering photos/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 102ms (View: 9, DB: 1) | 200 OK [http://192.168.232.131/bids/3/photos]
+
+
+Processing PhotosController#edit (for 192.168.232.1 at 2011-02-15 04:48:17) [GET]
+  Parameters: {"bid_id"=>"3", "id"=>"16"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 16 AND ("photos".bid_id = 3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#destroy (for 192.168.232.1 at 2011-02-15 04:48:22) [DELETE]
+  Parameters: {"authenticity_token"=>"e3Km2wFDZ+JhJERcshG0Nh9TBIqO4bTYJENZfxkQsXE=", "bid_id"=>"3", "id"=>"16"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 16 AND ("photos".bid_id = 3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:53:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 89ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 04:53:13) [GET]
+  [4;36;1mUser Indexes (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 84ms (View: 11, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:53:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 90ms (View: 12, DB: 1) | 200 OK [http://192.168.232.131/bids/4]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:53:43) [GET]
+  Parameters: {"bid_id"=>"4"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.3ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Load (0.5ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+Rendering photos/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos".bid_id = 4) [0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+Completed in 91ms (View: 12, DB: 1) | 200 OK [http://192.168.232.131/bids/4/photos]
+
+
+Processing PhotosController#edit (for 192.168.232.1 at 2011-02-15 04:53:44) [GET]
+  Parameters: {"bid_id"=>"4", "id"=>"15"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (0.2ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 4) [0m
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 15 AND ("photos".bid_id = 4)) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (15.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#show (for 192.168.232.1 at 2011-02-15 04:53:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mBid Load (1.7ms)[0m   [0;1mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;35;1mUser Indexes (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering template within layouts/bids
+Rendering bids/show
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 100ms (View: 10, DB: 3) | 200 OK [http://192.168.232.131/bids/3]
+
+
+Processing PhotosController#index (for 192.168.232.1 at 2011-02-15 04:54:00) [GET]
+  Parameters: {"bid_id"=>"3"}
+  [4;36;1mBid Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+Rendering photos/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos".bid_id = 3) [0m
+  [4;35;1mPhoto Indexes (0.1ms)[0m   [0mPRAGMA index_list("photos")[0m
+Completed in 96ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids/3/photos]
+
+
+Processing PhotosController#edit (for 192.168.232.1 at 2011-02-15 04:54:01) [GET]
+  Parameters: {"bid_id"=>"3", "id"=>"16"}
+  [4;36;1mBid Indexes (0.0ms)[0m   [0;1mPRAGMA index_list("bids")[0m
+  [4;35;1mBid Load (0.2ms)[0m   [0mSELECT * FROM "bids" WHERE ("bids"."id" = 3) [0m
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mPhoto Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 16 AND ("photos".bid_id = 3)) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.1) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_additions.rb:258:in `authorize!'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.1) lib/cancan/controller_resource.rb:9:in `block in add_before_filter'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (16.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:25:13) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 98ms (View: 11, DB: 1) | 200 OK [http://192.168.232.131/bids]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:45:42) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.4ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 105ms (View: 60, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:33) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 101ms (View: 56, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:35) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.5ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.2ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 83ms (View: 19, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:36) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 52ms (View: 10, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:37) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 57ms (View: 11, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:41) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 93ms (View: 12, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:42) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 98ms (View: 12, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:43) [GET]
+  [4;36;1mUser Indexes (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 97ms (View: 10, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:44) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.4ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 95ms (View: 11, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:52:45) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 89ms (View: 45, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:58:54) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.7ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 56ms (View: 13, DB: 2) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:58:55) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+  [4;35;1mBid Indexes (0.1ms)[0m   [0mPRAGMA index_list("bids")[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Completed in 53ms (View: 9, DB: 1) | 200 OK [http://192.168.232.131/bids]
+
+
+Processing UserSessionsController#destroy (for 192.168.232.1 at 2011-02-15 11:58:59) [GET]
+  [4;36;1mUser Indexes (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '5') LIMIT 1[0m
+Redirected to http://192.168.232.131:3000/
+Completed in 45ms (DB: 0) | 302 Found [http://192.168.232.131/logout]
+
+
+Processing BidsController#index (for 192.168.232.1 at 2011-02-15 11:59:03) [GET]
+  [4;35;1mUser Indexes (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mBid Load (0.3ms)[0m   [0;1mSELECT * FROM "bids" [0m
+Rendering template within layouts/bids
+Rendering bids/index
+
+ActionView::TemplateError (undefined method `username' for nil:NilClass) on line #2 of app/views/bids/index.html.erb:
+1: <div>
+2:   <h4> Hellow, <%= current_user.username %></h4>
+3: </div>
+4: <h1>Listing bids</h1>
+5: <table>
+
+    app/views/bids/index.html.erb:2
+    app/controllers/bids_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (21.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
