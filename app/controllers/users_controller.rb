@@ -12,4 +12,12 @@ class UsersController < ApplicationController
       render :action => 'new'
     end
   end
+  def show
+    @user = current_user 
+
+    respond_to do |format|
+      format.html
+      format.xml {render :xml => @bid}
+    end
+  end
 end

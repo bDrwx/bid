@@ -4,6 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   helper_method :current_user
+  helper_method :get_user_name
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   load_and_authorize_resource :bid
@@ -17,6 +18,15 @@ class ApplicationController < ActionController::Base
   end
   def current_user
     @current_user = current_user_session && current_user_session.record
+  end
+  def get_user_name
+    @user = current_user
+    if @user.nil?
+     "Guest" 
+    else
+      @user.username
+    end
+    
   end
   
   # Scrub sensitive parameters from your log
