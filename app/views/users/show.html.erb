@@ -1,0 +1,13 @@
+  <h1>Show user info</h1>
+  <p>
+    <b>Login:</b>
+    <%=h @user.username %>
+    <b>Email:</b>
+    <%= h @user.email %>
+  </p>
+  <h2>Users Bid`s</h2>
+  <p>
+    <% @user.bids.each do |bid| -%> 
+      <p><%= "My #{bid.name} price #{bid.price}" %></p>
+    <% end -%>   
+  </p>
